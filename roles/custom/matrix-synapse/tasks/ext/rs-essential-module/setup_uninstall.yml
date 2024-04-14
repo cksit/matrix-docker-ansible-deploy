@@ -1,0 +1,6 @@
+---
+
+- name: Ensure matrix-synapse-RS-Custom-SpamCheck-Essential-Module doesn't exist
+  file:
+    path: "{{ matrix_synapse_ext_path }}/essential_module.py"
+    state: absent
